@@ -1,0 +1,492 @@
+/*
+==============================================================
+                    GENERAL PROPERTIES
+==============================================================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  /* text-align: center; */
+}
+h3.header-subtitile, h3{
+  text-transform: lowercase;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: #333333;
+}
+h3.header-subtitile::first-letter{
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: 700 !important;
+  font-size: 30px;
+  color: #333333;
+}
+small{
+  color: #b3b3b3;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+}
+.card:not(#accordion .card){
+  border: 0;
+}
+/* 
+==============================================================
+                    START HOME SECTION
+==============================================================
+*/
+#home-section {
+  background: #f38181 url("../images/home_banner.jpg") no-repeat;
+  background-size: cover;
+  color: white;
+}
+/* Navbar section */
+#home-section .navbar-brand {
+  font-weight: 700;
+  font-size: 30px;
+}
+.sticky-top {
+  scroll-behavior: smooth;
+}
+#home-section .navbar{
+  background-color: #f38181cc;
+}
+#home-section #mogo-navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+#home-section #mogo-navbar .navbar-nav .nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+#home-section #mogo-navbar .navbar-nav .nav-link:focus,
+#home-section #mogo-navbar .navbar-nav .nav-link:hover,
+#home-section #mogo-navbar .navbar-nav .nav-link.active {
+  color: #fce38a;
+  border-bottom: #fce38a solid 3px;
+}
+.fa-shopping-cart,
+.fa-search {
+  font-size: 14px;
+}
+/* HEADER TEXT */
+.header_text h3 {
+  color: #FFF;
+  font-size: 72px;
+  text-transform: capitalize;
+}
+h1 {
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 140px;
+  margin: 40px;
+  text-transform: uppercase;
+}
+.header_text .learnMore:hover {
+  background: #000;
+  color: #fff;
+}
+/* SLIDER UNDER HOME SECTION */
+/* .slideIndecators {
+  width: 80%;
+  list-style: none;
+  position: absolute;
+  top: 94%;
+  left: 10%;
+}
+.slideIndecators li {
+  width: 23%;
+  float: left;
+  margin-right: 2%;
+  line-height: 200%;
+  border-color: #f8ebc5;
+  border-style: solid none none none;
+  border-width: 2px 0 0 0;
+  padding: 10px 40px 10px 0px;
+}
+.slideIndecators > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.slideIndecators li a span {
+  margin-right: 5px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.slideIndecators li:hover {
+  border-color: #fff;
+  border-style: solid none none none;
+  border-width: 2px 0 0 0;
+} */
+/* 
+==============================================================
+                    END HOME SECTION
+==============================================================
+*/
+/*
+==============================================================
+                    START ABOUT SECTION
+==============================================================
+*/
+/* ABOUT SECTION TEXT */
+#about-section > .row p,
+#services-section > .row p,
+#portfolio-section > .row p,
+#lblog-section > .row p,
+#contact-section > .row p {
+  color: #b3b3b3;
+}
+/* COUNTER SECTION */
+#about-section .counters {
+  min-height: 250px;
+  background-color: #95e1d3;
+  width: 100%;
+  margin: 0 auto;
+}
+#about-section .counters div.counter {
+  width: 20%;
+  color: #fff;
+  height: 250px;
+  border: #b5eae0 solid 1px;
+  float: left;
+  text-align: center;
+  padding: 50px;
+}
+#about-section .counters div.counter .number {
+  font-weight: 900;
+  font-size: 72px;
+}
+#about-section .counters div.counter .counter-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+/* 
+==============================================================
+                    END ABOUT SECTION
+==============================================================
+*/
+/* 
+==============================================================
+                    START SERVICE SECTION
+==============================================================
+*/
+/* #service-section .row {
+  min-height: 300px;
+} */
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.media .media-body {
+  color: #b3b3b3;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+}
+h6 {
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+}
+.media + hr {
+  float: left;
+  clear: both;
+  margin: 50px 0;
+  width: 100%;
+  color: #e5e5e5;
+}
+/* 
+==============================================================
+                    END SERVICE SECTION
+==============================================================
+*/
+/* 
+==============================================================
+                    START BLOG SECTION
+==============================================================
+*/
+#blog-section {
+  background: url("../images/blog_banner.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#blog-section > .row {
+  margin-bottom: 0;
+}
+#blog-section > .row img:nth-child(5) {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+}
+/* 
+==============================================================
+                    END BLOG SECTION
+==============================================================
+*/
+/* 
+==============================================================
+                    START SERVICES SECTION
+==============================================================
+*/
+#services-section .card img {
+  border-radius: 0 !important;
+}
+/* SLIDER AREA */
+#slider1 .carousel-item, #slider2 .carousel-item {
+  color: #f8f8f8;
+}
+#slider1 .carousel-item img {
+  width: 60px;
+  height: 60px;
+}
+#slider1 p, #slider2 p {
+  width: 60%;
+}
+#slider1 cite, #slider2 cite{
+  font-family: 'Kaushan Script', cursive;
+  color: #000;
+}
+#slider1 cite::before, #slider2 cite::before{
+  color: #000;
+  margin-right: 5px;
+  content: url(../images/lineThrough-red.png);
+}
+#slider1 .carousel-control-prev,
+#slider1 .carousel-control-next,
+#slider2 .carousel-control-prev,
+#slider2 .carousel-control-next {
+  width: 16px;
+  color: #b3b3b3;
+}
+.control-prev, .control-next{
+  font-size: 18px;
+  font-weight: 700;
+  color: #b3b3b3;
+}
+/* 
+==============================================================
+                    END SERVICES SECTION
+==============================================================
+*/
+/* 
+==============================================================
+                    START CONTACT SECTION
+==============================================================
+*/
+#contact-section .card-title{
+  font-weight: normal;
+  font-size: 14px;
+}
+#contact-section .card-subtitle{
+  font-family: 'Roboto', sans-serif;
+}
+/* 
+==============================================================
+                    END CONTACT SECTION
+==============================================================
+*/
+/* 
+==============================================================
+                    START PORTFOLIO SECTION
+==============================================================
+*/
+#portfolio-section #slider2 .carousel-item img{
+  width: 150px;
+  height: 150px;
+}
+/* SLIDER EDITION */
+#portfolio-section {
+  background-color: #ffffff;
+}
+#portfolio-section #slider-1 .slides .slide .sticker {
+  border: 0;
+  padding: 0;
+}
+/* 
+==============================================================
+                    END PORTFOLIO SECTION
+==============================================================
+*/
+/*
+==============================================================
+                    START COMMENT SECTION
+==============================================================
+*/
+#comment-section {
+  background: #fff url(../images/comment_banner.jpg) no-repeat;
+  background-size: cover;
+}
+/* 
+==============================================================
+END COMMENT SECTION
+==============================================================
+*/
+/* 
+==============================================================
+START LATEST BLOG SECTION
+==============================================================
+*/
+#lblog-section .card{
+  max-width: 390px;
+  height: auto;
+}
+#lblog-section .card .card-body + .card-text{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+}
+#lblog-section .card .card-body .card-text i::before{
+  color: #95e1d3;
+}
+
+#lblog-section .row:nth-child(2) {
+  background: #b3b3b3 url(../images/map-banner.png) no-repeat;
+  background-size: cover;
+}
+#lblog-section .row:nth-child(2) h2{
+  color: #f38181;
+}
+
+/* 
+==============================================================
+END LATEST BLOG SECTION
+==============================================================
+*/
+/* 
+==============================================================
+START FOOTER SECTION
+==============================================================
+*/
+.logo {
+  font-weight: bold;
+  color: #cccccc;
+  font-size: 48px;
+}
+.logo + div {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #cccccc;
+}
+#footer-section .form-control, #footer-section .share .share-buttons p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: #b3b3b3;
+}
+#footer-section .share .subscribe button{
+  font-style: normal;
+  font-weight: 700;
+  color: #FFF;
+  background-color: #95e1d3;
+}
+/* RIGHT SIDE */
+.footer{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.footer a{
+  color: #f38181;
+}
+/* 
+==============================================================
+                    END FOOTER SECTION
+==============================================================
+ */
+/* 
+==============================================================
+                    START MEDIA QUERY SECTION
+==============================================================
+*/
+/* FOR LEARGE DIVICES */
+@media screen and (max-width: 1199px) {
+  #about-section .counters div.counter .number {
+    font-size: 48px;
+  }
+}
+/* FOR MEDIUM DIVICES */
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  .header_text h3 {
+    font-size: 36px;
+  }
+  #about-section .counters {
+    min-height: 200px;
+  }
+  #about-section .counters div.counter {
+    height: 200px;
+    padding: 40px;
+  }
+  #about-section .counters div.counter .number {
+    font-size: 36px;
+  }
+  #slider1 p, #slider2 p {
+    width: 45%;
+  }
+}
+
+/* FOR SMALL DEVICES */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 80px;
+    line-height: 80px;
+    margin: 30px;
+  }
+  #about-section .counters {
+    min-height: 200px;
+  }
+  #about-section .counters div.counter {
+    height: 160px;
+    padding: 30px;
+  }
+  #about-section .counters div.counter .number {
+    font-size: 28px;
+  }
+  #about-section .counters div.counter .counter-text {
+    font-size: 12px;
+  }
+}
+
+/* FOR EXTRA SMALL DEVICES */
+@media screen and (max-width: 674px) {
+  #about-section .counters {
+    min-height: 150px;
+    background-color: #95e1d3;
+  }
+  #about-section .counters div.counter {
+    height: 150px;
+    padding: 30px;
+  }
+  #about-section .counters div.counter .number {
+    font-size: 24px;
+  }
+  #about-section .counters div.counter .counter-text {
+    font-size: 10px;
+  }
+}
+/* 
+==============================================================
+                    END MEDIA QUERY SECTION
+==============================================================
+*/
