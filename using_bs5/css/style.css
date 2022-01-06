@@ -13,7 +13,6 @@ body {
   color: black;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  /* text-align: center; */
 }
 h3.header-subtitile, h3{
   text-transform: lowercase;
@@ -126,7 +125,7 @@ h1 {
   font-size: 24px;
   font-weight: 700;
 }
-.slideIndecators li:hover, .slideIndecators li:active, .slideIndecators li:focus {
+.slideIndecators li:hover, .slideIndecators li.active, .slideIndecators li:focus {
   border-top: #FFF solid 5px;
   border-color: #fff;
   border-style: solid none none none;
