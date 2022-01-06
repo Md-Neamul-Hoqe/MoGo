@@ -8,11 +8,11 @@
 
   <!-- GOOGLE FONTS -->
   <!-- offline -->
-  <link rel="stylesheet" type="fonts" href="fonts/KaushanScript-Regular.ttf">
-  <link rel="stylesheet" type="fonts" href="fonts/Montserrat-Bold.ttf">
-  <link rel="stylesheet" type="fonts" href="fonts/Montserrat-Italic.ttf">
-  <link rel="stylesheet" type="fonts" href="fonts/Roboto-Regular.ttf">
-  <link rel="stylesheet" type="fonts" href="fonts/Roboto-LightItalic.ttf">
+  <!-- <link rel="stylesheet" type="application/x-font-ttf" href="fonts/KaushanScript-Regular.ttf"> -->
+  <!-- <link rel="stylesheet" type="application/x-font-ttf" href="fonts/Montserrat-Bold.ttf"> -->
+  <!-- <link rel="stylesheet" type="application/x-font-ttf" href="fonts/Montserrat-Italic.ttf"> -->
+  <!-- <link rel="stylesheet" type="application/x-font-ttf" href="fonts/Roboto-Regular.ttf"> -->
+  <!-- <link rel="stylesheet" type="application/x-font-ttf" href="fonts/Roboto-LightItalic.ttf"> -->
   <!-- online -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,13 +20,13 @@
     href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap"
     rel="stylesheet" />
   <!-- BOOTSTRAP 5 AND FONT AWESOME -->
-  <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="css/all.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="css/style.css" />
   <title>PSD to HTML || HTML5 || PS</title>
   <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/a6f74f5ce0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -68,21 +68,9 @@
       </div>
     </nav>
     <!-- Header Area Text with Button -->
-    <!-- <div class="row">
-      <div class="col">
-        <div class="header_text text-center pt-5 mt-5">
-          <h3 class="mt-5">Creative Template</h3>
-          <h1>Welcome<br />to MoGo</h1>
-          <img src="images/underLine_white.png" alt="line through" class="d-block mx-auto" />
-          <button class="btn text-white border border-3 .learnMore my-5">
-            Learn More
-          </button>
-        </div>
-      </div>
-    </div> -->
     <div class="row">
-      <div class="col-10 offset-1">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="col col-sm-10 offset-sm-1 col-xxl-8 offset-xxl-2">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -98,7 +86,7 @@
             <div class="carousel-item">
               <div class="header_text text-center pt-5 mt-5">
                 <h3 class="mt-5">We work with</h3>
-                <h1>Story About Us</h1>
+                <h1>Story <br> About Us</h1>
                 <img src="images/underLine_white.png" alt="line through" class="d-block mx-auto" />
                 <button class="btn text-white border border-3 .learnMore my-5">
                   Learn More
@@ -127,12 +115,12 @@
             </div><!-- End carousel-item -->
           </div><!-- End Carousel Inner -->
           <ul class="slideIndecators nav nav-pills">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#"><span>01</span>ABOUT</a></li>
-            <li data-target="#myCarousel" data-slide-to="1"><a href="#"><span>02</span>SERVICE</a>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"><a href="#"><span>01</span>ABOUT</a></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"><a href="#"><span>02</span>SERVICE</a>
             </li>
-            <li data-target="#myCarousel" data-slide-to="2"><a href="#"><span>03</span>BLOG</a>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"><a href="#"><span>03</span>BLOG</a>
             </li>
-            <li data-target="#myCarousel" data-slide-to="3"><a href="#"><span>04</span>CONTACTS</a>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="3"><a href="#"><span>04</span>CONTACTS</a>
             </li>
           </ul>
         </div><!-- End Carousel -->
@@ -376,32 +364,38 @@
       <div class="col col-md-8 offset-md-2">
         <div id="slider1" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item d-flex flex-row flex-nowrap align-items-center justify-content-center active">
-              <div class="border border-2 p-3 me-5"><img class="" src="images/speech.png" alt="first slide"></div>
+            <div class="carousel-item active">
+              <div class=" d-flex flex-row flex-nowrap align-items-center justify-content-center">
+                <div class="border border-2 p-3 me-5"><img src="images/speech.png" alt="first slide"></div>
               <p class="d-flex flex-column align-items-start">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation.
                 <cite class="mt-2">Joshua Earle</cite>
               </p>
+              </div>
             </div>
-            <div class="carousel-item d-flex flex-row flex-nowrap align-items-center justify-content-center">
-              <div class="border border-2 p-3 me-5"><img class="" src="images/speech.png" alt="first slide"></div>
+            <div class="carousel-item">
+              <div class=" d-flex flex-row flex-nowrap align-items-center justify-content-center">
+                <div class="border border-2 p-3 me-5"><img src="images/speech.png" alt="Seconde slide"></div>
               <p class="d-flex flex-column align-items-start">
                 eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation.
                 <cite class="mt-2">Jon Doe</cite>
               </p>
+              </div>
             </div>
-            <div class="carousel-item d-flex flex-row flex-nowrap align-items-center justify-content-center">
-              <div class="border border-2 p-3 me-5"><img class="" src="images/speech.png" alt="first slide"></div>
+            <div class="carousel-item">
+              <div class=" d-flex flex-row flex-nowrap align-items-center justify-content-center">
+                <div class="border border-2 p-3 me-5"><img src="images/speech.png" alt="Third slide"></div>
               <p class="d-flex flex-column align-items-start">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation.
                 <cite class="mt-2">Jon Doe</cite>
               </p>
+              </div>
             </div>
           </div>
           <button type="button" data-bs-target="#slider1" class="carousel-control-prev" data-bs-slide="prev">
@@ -420,7 +414,7 @@
   <!-- START CONTANT SECTION -->
   <section id="contact-section">
     <div class="row text-center">
-      <div class="col col-md-8 offset-md-2 col-sm-10 offset-sm-2">
+      <div class="col col-md-8 offset-md-2 col-sm-10 offset-sm-1">
         <h3 class="header-subtitile">Who we are</h3>
         <h2 class="mt-1 mb-4 text-uppercase">MEET OUR TEAM</h2>
         <img src="images/lineThrough-red.png" alt="lineThrough" class="d-block mx-auto" />
@@ -435,8 +429,8 @@
             <div class="card">
               <img src="images/layer-contacts.png" alt="services" />
               <div class="card-body">
-                <h6 class="card-title">MATTHEW DIX</h4>
-                  <small class="card-subtitle text-capitalize d-block text-muted">Graphic Design</small>
+                <h6 class="card-title">MATTHEW DIX</h6>
+                <small class="card-subtitle text-capitalize d-block text-muted">Graphic Design</small>
               </div>
             </div>
           </div>
@@ -444,8 +438,8 @@
             <div class="card">
               <img src="images/layer-contacts.png" alt="services" />
               <div class="card-body">
-                <h6 class="card-title">MATTHEW DIX</h4>
-                  <small class="card-subtitle text-capitalize d-block text-muted">Graphic Design</small>
+                <h6 class="card-title">MATTHEW DIX</h6>
+                <small class="card-subtitle text-capitalize d-block text-muted">Graphic Design</small>
               </div>
             </div>
           </div>
@@ -453,8 +447,8 @@
             <div class="card">
               <img src="images/layer-contacts.png" alt="services" />
               <div class="card-body">
-                <h6 class="card-title">MATTHEW DIX</h4>
-                  <small class="card-subtitle text-capitalize d-block text-muted">Graphic Design</small>
+                <h6 class="card-title">MATTHEW DIX</h6>
+                <small class="card-subtitle text-capitalize d-block text-muted">Graphic Design</small>
               </div>
             </div>
           </div>
@@ -510,62 +504,37 @@
         </div>
       </div>
     </div>
-    <!-- <div class="">
-      <div class="row">
-        <div class="col-3 g-0">
-          <img class="w-100" src="images/pictures-02.png" alt="portfolio" />
-        </div>
-        <div class="col-3 g-0">
-          <img class="w-100 px-0" src="images/pictures-02.png" alt="portfolio" />
-        </div>
-        <div class="col-3 g-0">
-          <img class="w-100 px-0" src="images/pictures-03.png" alt="portfolio" />
-        </div>
-        <div class="col-3 g-0">
-          <img class="w-100 px-0" src="images/pictures-04.png" alt="portfolio" />
-        </div>
-        <div class="col-3 g-0">
-          <img class="w-100 px-0" src="images/pictures-02.png" alt="portfolio" />
-        </div>
-        <div class="col-3 g-0">
-          <img class="w-100 px-0" src="images/pictures-02.png" alt="portfolio" />
-        </div>
-        <div class="col-3 g-0">
-          <img class="w-100 px-0" src="images/pictures-02.png" alt="portfolio" />
-        </div>
-      </div>
-    </div> -->
     <!-- SLIDER 2 -->
     <div class="row bg-transparent my-5">
       <div class="col col-md-8 offset-md-2">
         <div id="slider2" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item d-flex flex-row flex-nowrap align-items-center justify-content-center active">
-              <div class="me-5"><img class="" src="images/picture-circle-01.png" alt="first slide"></div>
+            <div class="carousel-item active">
+              <div class=" d-flex flex-row flex-nowrap align-items-center justify-content-center"><div class="me-5"><img class="" src="images/picture-circle-01.png" alt="first slide"></div>
               <p class="d-flex flex-column align-items-start">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation.
                 <cite class="mt-2">Joshua Earle</cite>
-              </p>
+              </p></div>
             </div>
-            <div class="carousel-item d-flex flex-row flex-nowrap align-items-center justify-content-center">
-              <div class="me-5"><img class="" src="images/picture-circle-01.png" alt="first slide"></div>
+            <div class="carousel-item">
+              <div class=" d-flex flex-row flex-nowrap align-items-center justify-content-center"><div class="me-5"><img class="" src="images/picture-circle-01.png" alt="first slide"></div>
               <p class="d-flex flex-column align-items-start">
                 eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation.
                 <cite class="mt-2">Joshua Earle</cite>
-              </p>
+              </p></div>
             </div>
-            <div class="carousel-item d-flex flex-row flex-nowrap align-items-center justify-content-center">
-              <div class="me-5"><img class="" src="images/picture-circle-01.png" alt="first slide"></div>
+            <div class="carousel-item">
+              <div class=" d-flex flex-row flex-nowrap align-items-center justify-content-center"><div class="me-5"><img class="" src="images/picture-circle-01.png" alt="first slide"></div>
               <p class="d-flex flex-column align-items-start">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation.
                 <cite class="mt-2">Joshua Earle</cite>
-              </p>
+              </p></div>
             </div>
           </div>
           <button type="button" data-bs-target="#slider2" class="carousel-control-prev" data-bs-slide="prev">
@@ -639,6 +608,7 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
   <!-- END COMMENT SECTION -->
   <!-- START LATEST BLOG SECTION -->
@@ -667,7 +637,7 @@
                     </p>
                     <hr>
                     <p class="card-text"><small class="text-capitalize"><i class="fas fa-eye me-1"></i>1560 <i
-                          class="fas fa-speech me-1"></i>98</small></p>
+                          class="fas fa-comment-dots me-1"></i>98</small></p>
                   </div>
                 </div>
               </div>
@@ -681,7 +651,7 @@
                     </p>
                     <hr>
                     <p class="card-text"><small class="text-capitalize"><i class="fas fa-eye me-1"></i>1560 <i
-                          class="fas fa-speech me-1"></i>98</small></p>
+                          class="fas fa-comment-dots me-1"></i>98</small></p>
                   </div>
                 </div>
               </div>
@@ -695,7 +665,7 @@
                     </p>
                     <hr>
                     <p class="card-text"><small class="text-capitalize"><i class="fas fa-eye me-1"></i>1560 <i
-                          class="fas fa-speech me-1"></i>98</small></p>
+                          class="fas fa-comment-dots me-1"></i>98</small></p>
                   </div>
                 </div>
               </div>
@@ -707,7 +677,7 @@
     <div class="row py-5">
       <div class="col text-center">
         <div class="mb-3">
-          <i class="fas fa-location"></i>
+          <i class="fas fa-map-marker-alt"></i>
         </div>
         <h2>OPEN MAP</h2>
         <img src="images/lineThrough-red.png" alt="LINE" />
@@ -735,15 +705,14 @@
               <hr>
               <div class="share-buttons mb-4 d-flex justify-content-start">
                 <p class="mb-5 text-capitalize">Follow Us:</p>
-                <a class="ms-2 me-1" href="#"><i class="fa fa-facebook-f"></i></a>
-                <a class="me-1" href="#"><i class="fa fa-facebook-f"></i></a>
-                <a class="me-1" href="#"><i class="fa fa-facebook-f"></i></a>
-                <a class="me-1" href="#"><i class="fa fa-facebook-f"></i></a>
-                <a class="me-1" href="#"><i class="fa fa-facebook-f"></i></a>
-                <a class="me-1" href="#"><i class="fa fa-facebook-f"></i></a>
-                <a class="me-1" href="#"><i class="fa fa-facebook-f"></i></a>
-                <a class="me-1" href="#"><i class="fa fa-facebook-f"></i></a>
-                <a class="me-1" href="#"><i class="fa fa-facebook-f"></i></a>
+                <a class="mx-xxl-2" href="#"><i class="fa fa-facebook-f"></i></a>
+                <a class="mx-xxl-2" href="#"><i class="fa fa-tumblr"></i></a>
+                <a class="mx-xxl-2" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="mx-xxl-2" href="#"><i class="fa fa-instagram"></i></a>
+                <a class="mx-xxl-2" href="#"><i class="fa fa-pinterest-p"></i></a>
+                <a class="mx-xxl-2" href="#"><i class="fa fa-google-plus"></i></a>
+                <a class="mx-xxl-2" href="#"><i class="fa fa-youtube"></i></a>
+                <a class="mx-xxl-2" href="#"><i class="fa fa-globe"></i></a>
               </div>
               <div class="subscribe d-flex flex-nowrap">
                 <input class="form-control" type="email" name="email" id="Email" placeholder="Your Email ..." />
@@ -822,7 +791,6 @@
     </div>
   </div>
   <!-- END FOOTER SECTION -->
-
   <!-- JS SCRIPTS -->
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>

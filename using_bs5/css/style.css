@@ -51,6 +51,9 @@ small{
   color: white;
 }
 /* Navbar section */
+#home-section .container{
+  max-width: 66.666667%;
+}
 #home-section .navbar-brand {
   font-weight: 700;
   font-size: 30px;
@@ -75,6 +78,7 @@ small{
   color: #fce38a;
   border-bottom: #fce38a solid 3px;
 }
+.fa-,
 .fa-shopping-cart,
 .fa-search {
   font-size: 14px;
@@ -93,7 +97,7 @@ h1 {
   text-transform: uppercase;
 }
 .header_text .learnMore:hover {
-  background: #000;
+  background: #eee;
   color: #fff;
 }
 /* SLIDER UNDER HOME SECTION */
@@ -338,8 +342,11 @@ h6 {
   width: 100%;
 }
 #portfolio-section .card-columns .card-body{
-  min-height: 274px;
+  height: 390px;
   padding: 0;
+}
+#portfolio-section .card-columns .card:nth-child(5) .card-body{
+  height: 780px;
 }
 /* 
 ==============================================================
@@ -383,10 +390,12 @@ START LATEST BLOG SECTION
   background: #b3b3b3 url(../images/map-banner.png) no-repeat;
   background-size: cover;
 }
-#lblog-section .row:nth-child(2) h2{
+#lblog-section .row:nth-child(2) h2, #lblog-section .row:nth-child(2) .fas{
   color: #f38181;
 }
-
+#lblog-section .row:nth-child(2) .fas{
+  font-size: 20px;
+}
 /* 
 ==============================================================
 END LATEST BLOG SECTION
@@ -412,6 +421,12 @@ START FOOTER SECTION
   font-style: italic;
   font-weight: 300;
   color: #b3b3b3;
+}
+ #footer-section .share .share-buttons a i.fa {
+  margin: 0 5px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #95e1d3;
 }
 #footer-section .share .subscribe button{
   font-style: normal;
@@ -439,12 +454,33 @@ START FOOTER SECTION
 ==============================================================
 */
 /* FOR LEARGE DIVICES */
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1399px) {
+  #home-section .container{
+    max-width: 83.333333%;
+  }
   #about-section .counters .counter .number {
     font-size: 48px;
   }
+  #portfolio-section .card-columns .card-body{
+    height: 300px;
+  }
+  #portfolio-section .card-columns .card:nth-child(5) .card-body{
+    height: 600px;
+  }
 }
 /* FOR MEDIUM DIVICES */
+@media screen and (max-width: 1199px) {
+  #home-section .container{
+    max-width: 83.333333%;
+  }
+  h1 {
+    font-size: 120px;
+    line-height: 100px;
+  }
+  .header_text h3 {
+    font-size: 60px;
+  }
+}
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 100px;
@@ -469,6 +505,9 @@ START FOOTER SECTION
 }
 /* FOR SMALL DEVICES */
 @media screen and (max-width: 767px) {
+  #home-section .container{
+    max-width: 100%;
+  }
   h1 {
     font-size: 80px;
     line-height: 80px;
@@ -487,6 +526,12 @@ START FOOTER SECTION
   #about-section .counters .counter .counter-text {
     font-size: 12px;
   }
+  #portfolio-section .card-columns .card-body{
+    height: 200px;
+  }
+  #portfolio-section .card-columns .card:nth-child(5) .card-body{
+    height: 400px;
+  }
 }
 
 /* FOR EXTRA SMALL DEVICES */
@@ -504,6 +549,11 @@ START FOOTER SECTION
   }
   #about-section .counters .counter .counter-text {
     font-size: 10px;
+  }
+  #portfolio-section .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
   }
 }
 /* 
