@@ -7,6 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- GOOGLE FONTS -->
+  <!-- offline -->
+  <link rel="stylesheet" type="fonts" href="fonts/KaushanScript-Regular.ttf">
+  <link rel="stylesheet" type="fonts" href="fonts/Montserrat-Bold.ttf">
+  <link rel="stylesheet" type="fonts" href="fonts/Montserrat-Italic.ttf">
+  <link rel="stylesheet" type="fonts" href="fonts/Roboto-Regular.ttf">
+  <link rel="stylesheet" type="fonts" href="fonts/Roboto-LightItalic.ttf">
+  <!-- online -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -35,8 +42,8 @@
         </button>
         <div class="collapse navbar-collapse" id="mogo-navbar">
           <div class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link me-5 active" aria-current="page" href="#about-section">about</a>
+            <li class="nav-item active">
+              <a class="nav-link me-5" aria-current="page" href="#about-section">about</a>
             </li>
             <li class="nav-item">
               <a class="nav-link me-5" aria-current="page" href="#service-section">work</a>
@@ -61,7 +68,7 @@
       </div>
     </nav>
     <!-- Header Area Text with Button -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="col">
         <div class="header_text text-center pt-5 mt-5">
           <h3 class="mt-5">Creative Template</h3>
@@ -72,25 +79,65 @@
           </button>
         </div>
       </div>
-    </div>
-    <!-- <div class="row">
-        <div class="col">
-          <ul class="slideIndecators">
-            <li>
-              <a href="#"><span>01</span>ABOUT</a>
+    </div> -->
+    <div class="row">
+      <div class="col-10 offset-1">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="header_text text-center pt-5 mt-5">
+                <h3 class="mt-5">Creative Template</h3>
+                <h1>Welcome<br />to MoGo</h1>
+                <img src="images/underLine_white.png" alt="line through" class="d-block mx-auto" />
+                <button class="btn text-white border border-3 .learnMore my-5">
+                  Learn More
+                </button>
+              </div>
+            </div><!-- End Item -->
+            <div class="carousel-item">
+              <div class="header_text text-center pt-5 mt-5">
+                <h3 class="mt-5">We work with</h3>
+                <h1>Story About Us</h1>
+                <img src="images/underLine_white.png" alt="line through" class="d-block mx-auto" />
+                <button class="btn text-white border border-3 .learnMore my-5">
+                  Learn More
+                </button>
+              </div>
+            </div><!-- End carousel-item -->
+            <div class="carousel-item">
+              <div class="header_text text-center pt-5 mt-5">
+                <h3 class="mt-5">What We dO</h3>
+                <h1>Welcome<br />to MoGo</h1>
+                <img src="images/underLine_white.png" alt="line through" class="d-block mx-auto" />
+                <button class="btn text-white border border-3 .learnMore my-5">
+                  Learn More
+                </button>
+              </div>
+            </div><!-- End carousel-item -->
+            <div class="carousel-item">
+              <div class="header_text text-center pt-5 mt-5">
+                <h3 class="mt-5">Who we are</h3>
+                <h1>Welcome<br />to MoGo</h1>
+                <img src="images/underLine_white.png" alt="line through" class="d-block mx-auto" />
+                <button class="btn text-white border border-3 .learnMore my-5">
+                  Learn More
+                </button>
+              </div>
+            </div><!-- End carousel-item -->
+          </div><!-- End Carousel Inner -->
+          <ul class="slideIndecators nav nav-pills">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#"><span>01</span>ABOUT</a></li>
+            <li data-target="#myCarousel" data-slide-to="1"><a href="#"><span>02</span>SERVICE</a>
             </li>
-            <li>
-              <a href="#"><span>02</span>SERVICE</a>
+            <li data-target="#myCarousel" data-slide-to="2"><a href="#"><span>03</span>BLOG</a>
             </li>
-            <li>
-              <a href="#"><span>03</span>BLOG</a>
-            </li>
-            <li>
-              <a href="#"><span>04</span>CONTACTS</a>
+            <li data-target="#myCarousel" data-slide-to="3"><a href="#"><span>04</span>CONTACTS</a>
             </li>
           </ul>
-        </div>
-      </div> -->
+        </div><!-- End Carousel -->
+      </div>
+    </div>
   </header>
   <!-- END HOME SECTION -->
   <!-- START ABOUT SECTION -->
@@ -436,31 +483,37 @@
         </p>
       </div>
     </div>
-    <div class="">
+    <div class="row">
+      <div class="col">
+        <div class="card-columns">
+          <div class="card g-0">
+            <img class="card-body" src="images/pictures-02.png" alt="portfolio" />
+          </div>
+          <div class="card g-0">
+            <img class="card-body" src="images/pictures-02.png" alt="portfolio" />
+          </div>
+          <div class="card g-0">
+            <img class="card-body" src="images/pictures-04.png" alt="portfolio" />
+          </div>
+          <div class="card g-0">
+            <img class="card-body" src="images/pictures-04.png" alt="portfolio" />
+          </div>
+          <div class="card g-0">
+            <img class="card-body" src="images/pictures-03.png" alt="portfolio" />
+          </div>
+          <div class="card g-0">
+            <img class="card-body" src="images/pictures-02.png" alt="portfolio" />
+          </div>
+          <div class="card g-0">
+            <img class="card-body" src="images/pictures-04.png" alt="portfolio" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="">
       <div class="row">
         <div class="col-3 g-0">
           <img class="w-100" src="images/pictures-02.png" alt="portfolio" />
-          <!-- <div class="card w-25">
-            <img class="card-img-top w-100" src="images/pictures-02.png" alt="portfolio" />
-          </div>
-          <div class="card w-25">
-            <img class="card-img-top w-100" src="images/pictures-04.png" alt="portfolio" />
-          </div>
-          <div class="card w-25">
-            <img class="card-img-top w-100" src="images/pictures-03.png" alt="portfolio" />
-          </div>
-          <div class="card w-25">
-            <img class="card-img-top w-100" src="images/pictures-02.png" alt="portfolio" />
-          </div>
-          <div class="card w-25">
-            <img class="card-img-top w-100" src="images/pictures-04.png" alt="portfolio" />
-          </div>
-          <div class="card w-25">
-            <img class="card-img-top w-100" src="images/pictures-02.png" alt="portfolio" />
-          </div>
-          <div class="card w-25">
-            <img class="card-img-top w-100" src="images/pictures-04.png" alt="portfolio" />
-          </div> -->
         </div>
         <div class="col-3 g-0">
           <img class="w-100 px-0" src="images/pictures-02.png" alt="portfolio" />
@@ -481,7 +534,7 @@
           <img class="w-100 px-0" src="images/pictures-02.png" alt="portfolio" />
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- SLIDER 2 -->
     <div class="row bg-transparent my-5">
       <div class="col col-md-8 offset-md-2">

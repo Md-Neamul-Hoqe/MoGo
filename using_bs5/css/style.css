@@ -69,9 +69,9 @@ small{
   font-size: 14px;
   text-transform: uppercase;
 }
-#home-section #mogo-navbar .navbar-nav .nav-link:focus,
-#home-section #mogo-navbar .navbar-nav .nav-link:hover,
-#home-section #mogo-navbar .navbar-nav .nav-link.active {
+#home-section #mogo-navbar .navbar-nav .nav-item .nav-link:focus,
+#home-section #mogo-navbar .navbar-nav .nav-item .nav-link:hover,
+#home-section #mogo-navbar .navbar-nav .nav-item .nav-link:active {
   color: #fce38a;
   border-bottom: #fce38a solid 3px;
 }
@@ -97,18 +97,15 @@ h1 {
   color: #fff;
 }
 /* SLIDER UNDER HOME SECTION */
-/* .slideIndecators {
-  width: 80%;
+.slideIndecators {
   list-style: none;
-  position: absolute;
-  top: 94%;
-  left: 10%;
+  display: flex;
 }
 .slideIndecators li {
   width: 23%;
-  float: left;
+  /* float: left; */
   margin-right: 2%;
-  line-height: 200%;
+  line-height: 300%;
   border-color: #f8ebc5;
   border-style: solid none none none;
   border-width: 2px 0 0 0;
@@ -125,11 +122,12 @@ h1 {
   font-size: 24px;
   font-weight: 700;
 }
-.slideIndecators li:hover {
+.slideIndecators li:hover, .slideIndecators li:active, .slideIndecators li:focus {
+  border-top: #FFF solid 5px;
   border-color: #fff;
   border-style: solid none none none;
   border-width: 2px 0 0 0;
-} */
+}
 /* 
 ==============================================================
                     END HOME SECTION
@@ -155,7 +153,7 @@ h1 {
   width: 100%;
   margin: 0 auto;
 }
-#about-section .counters div.counter {
+#about-section .counters .counter {
   width: 20%;
   color: #fff;
   height: 250px;
@@ -164,11 +162,11 @@ h1 {
   text-align: center;
   padding: 50px;
 }
-#about-section .counters div.counter .number {
+#about-section .counters .counter .number {
   font-weight: 900;
   font-size: 72px;
 }
-#about-section .counters div.counter .counter-text {
+#about-section .counters .counter .counter-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -249,8 +247,11 @@ h6 {
   border-radius: 0 !important;
 }
 /* SLIDER AREA */
-#slider1 .carousel-item, #slider2 .carousel-item {
-  color: #f8f8f8;
+#slider1{
+  color: #bdbdbd;
+}
+#slider1 .carousel-item {
+  background-color: #f8f8f8;
 }
 #slider1 .carousel-item img {
   width: 60px;
@@ -261,10 +262,9 @@ h6 {
 }
 #slider1 cite, #slider2 cite{
   font-family: 'Kaushan Script', cursive;
-  color: #000;
+  color: #333333;
 }
 #slider1 cite::before, #slider2 cite::before{
-  color: #000;
   margin-right: 5px;
   content: url(../images/lineThrough-red.png);
 }
@@ -307,16 +307,38 @@ h6 {
                     START PORTFOLIO SECTION
 ==============================================================
 */
+#portfolio-section {
+  background-color: #ffffff;
+}
+/* SLIDER EDITION */
+#slider2 .carousel-item {
+  background-color: #FFF;
+}
 #portfolio-section #slider2 .carousel-item img{
   width: 150px;
   height: 150px;
 }
-/* SLIDER EDITION */
-#portfolio-section {
-  background-color: #ffffff;
-}
 #portfolio-section #slider-1 .slides .slide .sticker {
   border: 0;
+  padding: 0;
+}
+
+/* CARD COLUMNS */
+#portfolio-section .card-columns {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 0rem;
+  -moz-column-gap: 0rem;
+  column-gap: 0rem;
+  orphans: 1;
+  widows: 1;
+}
+#portfolio-section .card-columns .card {
+  width: 100%;
+}
+#portfolio-section .card-columns .card-body{
+  min-height: 274px;
   padding: 0;
 }
 /* 
@@ -418,7 +440,7 @@ START FOOTER SECTION
 */
 /* FOR LEARGE DIVICES */
 @media screen and (max-width: 1199px) {
-  #about-section .counters div.counter .number {
+  #about-section .counters .counter .number {
     font-size: 48px;
   }
 }
@@ -434,18 +456,17 @@ START FOOTER SECTION
   #about-section .counters {
     min-height: 200px;
   }
-  #about-section .counters div.counter {
+  #about-section .counters .counter {
     height: 200px;
     padding: 40px;
   }
-  #about-section .counters div.counter .number {
+  #about-section .counters .counter .number {
     font-size: 36px;
   }
   #slider1 p, #slider2 p {
     width: 45%;
   }
 }
-
 /* FOR SMALL DEVICES */
 @media screen and (max-width: 767px) {
   h1 {
@@ -454,16 +475,16 @@ START FOOTER SECTION
     margin: 30px;
   }
   #about-section .counters {
-    min-height: 200px;
+    min-height: 160px;
   }
-  #about-section .counters div.counter {
+  #about-section .counters .counter {
     height: 160px;
     padding: 30px;
   }
-  #about-section .counters div.counter .number {
+  #about-section .counters .counter .number {
     font-size: 28px;
   }
-  #about-section .counters div.counter .counter-text {
+  #about-section .counters .counter .counter-text {
     font-size: 12px;
   }
 }
@@ -474,14 +495,14 @@ START FOOTER SECTION
     min-height: 150px;
     background-color: #95e1d3;
   }
-  #about-section .counters div.counter {
+  #about-section .counters .counter {
     height: 150px;
     padding: 30px;
   }
-  #about-section .counters div.counter .number {
+  #about-section .counters .counter .number {
     font-size: 24px;
   }
-  #about-section .counters div.counter .counter-text {
+  #about-section .counters .counter .counter-text {
     font-size: 10px;
   }
 }
